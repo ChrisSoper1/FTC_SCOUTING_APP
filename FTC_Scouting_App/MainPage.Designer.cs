@@ -34,6 +34,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.T1_Full_Park_auto = new System.Windows.Forms.Button();
             this.T1_beacons_tele = new System.Windows.Forms.Button();
             this.t1_Yoga_Tele = new System.Windows.Forms.Button();
@@ -47,6 +49,8 @@
             this.t1_high_goal_auto = new System.Windows.Forms.Button();
             this.t1_beacon_auto = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.T2_Full_Park_auto = new System.Windows.Forms.Button();
             this.T2_beacons_tele = new System.Windows.Forms.Button();
             this.t2_Yoga_Tele = new System.Windows.Forms.Button();
@@ -59,10 +63,6 @@
             this.t2_yoga_auto = new System.Windows.Forms.Button();
             this.t2_high_goal_auto = new System.Windows.Forms.Button();
             this.t2_beacon_auto = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -100,9 +100,9 @@
             this.button36 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -196,6 +196,26 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(263, 208);
             this.panel3.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(167, 160);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Low Yoga Ball";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(165, 131);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Mid Yoga";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // T1_Full_Park_auto
             // 
@@ -336,6 +356,26 @@
             this.panel4.Size = new System.Drawing.Size(258, 193);
             this.panel4.TabIndex = 3;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(180, 166);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(68, 22);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Low Yoga";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(180, 136);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 24);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Mid Yoga";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // T2_Full_Park_auto
             // 
             this.T2_Full_Park_auto.Location = new System.Drawing.Point(22, 137);
@@ -452,46 +492,6 @@
             this.t2_beacon_auto.Text = "Beacon";
             this.t2_beacon_auto.UseVisualStyleBackColor = true;
             this.t2_beacon_auto.Click += new System.EventHandler(this.t2_beacon_auto_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(165, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Mid Yoga";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(167, 160);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Low Yoga Ball";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(180, 136);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 24);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Mid Yoga";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(180, 166);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(68, 22);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Low Yoga";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // panel7
             // 
@@ -877,16 +877,14 @@
             this.panel5.Size = new System.Drawing.Size(204, 145);
             this.panel5.TabIndex = 6;
             // 
-            // label3
+            // textBox6
             // 
-            this.label3.BackColor = System.Drawing.Color.Lime;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 41);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Results";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.textBox6.BackColor = System.Drawing.Color.Blue;
+            this.textBox6.Location = new System.Drawing.Point(35, 110);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(135, 20);
+            this.textBox6.TabIndex = 2;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
             // 
@@ -897,14 +895,16 @@
             this.textBox3.TabIndex = 1;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // label3
             // 
-            this.textBox6.BackColor = System.Drawing.Color.Blue;
-            this.textBox6.Location = new System.Drawing.Point(35, 110);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(135, 20);
-            this.textBox6.TabIndex = 2;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label3.BackColor = System.Drawing.Color.Lime;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(26, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 41);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Results";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button5
             // 
@@ -920,7 +920,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 714);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel8);

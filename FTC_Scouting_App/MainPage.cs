@@ -215,8 +215,8 @@ namespace FTC_Scouting_App
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            secondTeamScore = secondTeamScore + 10;
-            redSideScore = redSideScore + 10;
+            firstTeamScore = firstTeamScore + 10;
+            blueSideScore = blueSideScore + 10;
             updateScore();
         }
 
