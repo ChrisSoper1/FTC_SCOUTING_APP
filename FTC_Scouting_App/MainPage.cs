@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace FTC_Scouting_App
 {
@@ -14,13 +16,13 @@ namespace FTC_Scouting_App
     {
 
 
-        int firstTeamScore=0;
+        int firstTeamScore = 0;
         int secondTeamScore = 0;
         int thirdTeamScore = 0;
         int fourthTeamScore = 0;
 
-        int blueSideScore=0;
-        int redSideScore =0;
+        int blueSideScore = 0;
+        int redSideScore = 0;
 
 
         public MainPage()
@@ -111,8 +113,8 @@ namespace FTC_Scouting_App
 
         private void t2_beacon_auto_Click(object sender, EventArgs e)
         {
-            firstTeamScore=firstTeamScore + 30;
-            blueSideScore=blueSideScore + 30;
+            firstTeamScore = firstTeamScore + 30;
+            blueSideScore = blueSideScore + 30;
             updateScore();
 
         }
@@ -187,7 +189,7 @@ namespace FTC_Scouting_App
         private void t1_corner_Tele_Click(object sender, EventArgs e)
         {
             redSideScore = redSideScore + 1;
-            secondTeamScore = secondTeamScore+ 1;
+            secondTeamScore = secondTeamScore + 1;
             updateScore();
         }
 
@@ -223,7 +225,7 @@ namespace FTC_Scouting_App
         private void button3_Click_1(object sender, EventArgs e)
         {
             firstTeamScore = firstTeamScore + 20;
-            blueSideScore = blueSideScore+ 20;
+            blueSideScore = blueSideScore + 20;
             updateScore();
         }
 
@@ -393,6 +395,24 @@ namespace FTC_Scouting_App
         private void button5_Click(object sender, EventArgs e)
         {
             updateScore();
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            String MyDocumentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            String SaveFileFolder = Path.Combine(MyDocumentsFolder, "FTC_Scorecard");
+            if (!Directory.Exists(SaveFileFolder)) {
+                Directory.CreateDirectory(SaveFileFolder);
+            }
+
+            XmlSerializer serializer = new XmlSerializer(typeof(TeamScore));
+            TeamScore Team1Scores = new TeamScore();
+            Team1Scores.BeaconScore = firstTeamScore;
+            Team1Scores.CenterVortexScore = firstTeamScore * 30;
+
+            FileStream writer = new FileStream(Path.Combine(SaveFileFolder, "Team1Score.xml"), FileMode.Create);
+            serializer.Serialize(writer, Team1Scores);
+            writer.Close();
         }
     }
 }
