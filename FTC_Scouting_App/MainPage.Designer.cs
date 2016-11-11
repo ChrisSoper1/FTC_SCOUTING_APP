@@ -109,6 +109,10 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -189,6 +193,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.button9);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.T1_Full_Park_auto);
@@ -348,6 +353,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.button8);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.T2_Full_Park_auto);
@@ -536,6 +542,7 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.button6);
             this.panel8.Controls.Add(this.button16);
             this.panel8.Controls.Add(this.button17);
             this.panel8.Controls.Add(this.button18);
@@ -551,9 +558,9 @@
             this.panel8.Controls.Add(this.button25);
             this.panel8.Controls.Add(this.button26);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel8.Location = new System.Drawing.Point(0, 157);
+            this.panel8.Location = new System.Drawing.Point(0, 101);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(333, 241);
+            this.panel8.Size = new System.Drawing.Size(333, 297);
             this.panel8.TabIndex = 5;
             // 
             // button16
@@ -725,6 +732,7 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.button7);
             this.panel10.Controls.Add(this.button27);
             this.panel10.Controls.Add(this.button28);
             this.panel10.Controls.Add(this.button29);
@@ -992,6 +1000,42 @@
             this.panel13.Size = new System.Drawing.Size(333, 398);
             this.panel13.TabIndex = 12;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(11, 166);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "Corner Goal";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(18, 166);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 16;
+            this.button7.Text = "Corner Goal";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(21, 165);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 16;
+            this.button8.Text = "Corner Goal";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(7, 155);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 16;
+            this.button9.Text = "Corner Goal";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1118,6 +1162,10 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 
