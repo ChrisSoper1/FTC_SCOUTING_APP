@@ -536,7 +536,6 @@
             // 
             // panel8
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel8.Controls.Add(this.button16);
             this.panel8.Controls.Add(this.button17);
             this.panel8.Controls.Add(this.button18);
@@ -551,9 +550,10 @@
             this.panel8.Controls.Add(this.button24);
             this.panel8.Controls.Add(this.button25);
             this.panel8.Controls.Add(this.button26);
-            this.panel8.Location = new System.Drawing.Point(3, 106);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.Location = new System.Drawing.Point(0, 157);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(482, 241);
+            this.panel8.Size = new System.Drawing.Size(333, 241);
             this.panel8.TabIndex = 5;
             // 
             // button16
@@ -726,7 +726,6 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.button27);
-            this.panel10.Controls.Add(this.SaveButton);
             this.panel10.Controls.Add(this.button28);
             this.panel10.Controls.Add(this.button29);
             this.panel10.Controls.Add(this.button30);
@@ -949,7 +948,7 @@
             // SaveButton
             // 
             this.SaveButton.AutoSize = true;
-            this.SaveButton.Location = new System.Drawing.Point(18, 160);
+            this.SaveButton.Location = new System.Drawing.Point(503, 726);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 8;
@@ -990,7 +989,7 @@
             this.panel13.Controls.Add(this.panel8);
             this.panel13.Location = new System.Drawing.Point(12, 422);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(333, 275);
+            this.panel13.Size = new System.Drawing.Size(333, 398);
             this.panel13.TabIndex = 12;
             // 
             // MainPage
@@ -999,6 +998,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 857);
             this.Controls.Add(this.panel13);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel6);
@@ -1030,6 +1030,7 @@
             this.panel12.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
