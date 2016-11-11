@@ -14,6 +14,10 @@ namespace FTC_Scouting_App
 {
     public partial class MainPage : Form
     {
+        TeamScore Team1Scores = new TeamScore();
+        TeamScore Team2Scores = new TeamScore();
+        TeamScore Team3Scores = new TeamScore();
+        TeamScore Team4Scores = new TeamScore();
 
 
         int firstTeamScore = 0;
@@ -38,7 +42,8 @@ namespace FTC_Scouting_App
 
         private void updateScore()
         {
-            textBox3.Text = redSideScore.ToString();
+
+            textBox3.Text = (Team2Scores.TotalScore + Team3Scores.TotalScore).ToString();
             textBox2.Text = firstTeamScore.ToString();
             textBox1.Text = secondTeamScore.ToString();
             textBox4.Text = thirdTeamScore.ToString();
@@ -73,6 +78,7 @@ namespace FTC_Scouting_App
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Team2Scores.BeaconScore = Team2Scores.BeaconScore + 30;
             redSideScore = redSideScore + 30;
             secondTeamScore = secondTeamScore + 30;
             updateScore();
@@ -406,7 +412,12 @@ namespace FTC_Scouting_App
             }
 
             XmlSerializer serializer = new XmlSerializer(typeof(TeamScore));
-            TeamScore Team1Scores = new TeamScore();
+
+
+
+            Team3Scores.BeaconScore = 80;
+            Team3Scores.CenterVortexScore = 7;
+
             Team1Scores.BeaconScore = firstTeamScore;
             Team1Scores.CenterVortexScore = firstTeamScore * 30;
 

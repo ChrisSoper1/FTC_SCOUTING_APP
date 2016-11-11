@@ -683,6 +683,7 @@
             // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel9.BackColor = System.Drawing.Color.Blue;
             this.panel9.Controls.Add(this.textBox5);
             this.panel9.Controls.Add(this.label21);
@@ -712,6 +713,7 @@
             // 
             // panel10
             // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel10.Controls.Add(this.button27);
             this.panel10.Controls.Add(this.button28);
             this.panel10.Controls.Add(this.button29);
@@ -931,7 +933,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1181, 857);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel5);
