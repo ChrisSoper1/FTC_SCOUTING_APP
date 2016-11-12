@@ -386,5 +386,29 @@ namespace FTC_Scouting_App
         {
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Team2Scores.CornerVortexAuto = Team2Scores.CornerVortexAuto + 5;
+            updateScore();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Team1Scores.CornerVortexAuto = Team1Scores.CornerVortexAuto + 5;
+            updateScore();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Team3Scores.CornerVortexAuto = Team3Scores.CornerVortexAuto + 5;
+            updateScore();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Team4Scores.CornerVortexAuto = Team4Scores.CornerVortexAuto + 5;
+            updateScore();
+        }
     }
 }
