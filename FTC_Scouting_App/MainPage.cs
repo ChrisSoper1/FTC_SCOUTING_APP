@@ -31,6 +31,8 @@ namespace FTC_Scouting_App
 
         public MainPage()
         {
+            
+
             InitializeComponent();
             textBox2.Text = firstTeamScore.ToString();
             textBox1.Text = secondTeamScore.ToString();
@@ -38,6 +40,9 @@ namespace FTC_Scouting_App
             textBox4.Text = thirdTeamScore.ToString();
             textBox5.Text = fourthTeamScore.ToString();
             textBox6.Text = blueSideScore.ToString();
+            panel7.Size = new Size(263, 100);
+
+
         }
 
         private void updateScore()
@@ -409,6 +414,11 @@ namespace FTC_Scouting_App
         {
             Team4Scores.CornerVortexAuto = Team4Scores.CornerVortexAuto + 5;
             updateScore();
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
