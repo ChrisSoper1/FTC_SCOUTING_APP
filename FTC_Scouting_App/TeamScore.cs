@@ -12,14 +12,27 @@ namespace FTC_Scouting_App
 
         public DateTime MatchTime { get; set; }
 
-        public int BeaconScore { get; set; }
 
-        public int CenterVortexScore { get; set; }
+        public int BeaconScoreAuto { get; set; }
+        public int CornerVortexAuto { get; set; }
+        public int CenterVortexScoreAuto { get; set; }
+        public int YogaBallAuto { get; set; }
+        public int EndHeightAuto { get; set; }
+
+
+
+        public int BeaconScoreTele { get; set; }
+
+        public int CenterVortexScoreTele { get; set; }
+
+        public int CornerVortexScoreTele { get; set; }
+
+        public int YogaBallTele { get; set; }
 
         public int TotalScore
         {
             get {
-                return BeaconScore + CenterVortexScore;
+                return BeaconScoreTele + CenterVortexScoreTele + CornerVortexScoreTele + YogaBallTele+ BeaconScoreAuto+ CornerVortexAuto+CenterVortexScoreAuto+ YogaBallAuto+ EndHeightAuto;
             }
         }
     }

@@ -44,11 +44,11 @@ namespace FTC_Scouting_App
         {
 
             textBox3.Text = (Team2Scores.TotalScore + Team3Scores.TotalScore).ToString();
-            textBox2.Text = firstTeamScore.ToString();
-            textBox1.Text = secondTeamScore.ToString();
-            textBox4.Text = thirdTeamScore.ToString();
-            textBox5.Text = fourthTeamScore.ToString();
-            textBox6.Text = blueSideScore.ToString();
+            textBox2.Text = Team1Scores.TotalScore.ToString();
+            textBox1.Text = Team2Scores.TotalScore.ToString(); 
+            textBox4.Text = Team3Scores.TotalScore.ToString();
+            textBox5.Text = Team4Scores.TotalScore.ToString();
+            textBox6.Text = (Team1Scores.TotalScore + Team4Scores.TotalScore).ToString();
         }
 
         private void MainPage_Load(object sender, EventArgs e)
@@ -78,37 +78,31 @@ namespace FTC_Scouting_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Team2Scores.BeaconScore = Team2Scores.BeaconScore + 30;
-            redSideScore = redSideScore + 30;
-            secondTeamScore = secondTeamScore + 30;
+            Team2Scores.BeaconScoreAuto = Team2Scores.BeaconScoreAuto + 30;
             updateScore();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            redSideScore = redSideScore + 15;
-            secondTeamScore = secondTeamScore + 15;
+            Team2Scores.CenterVortexScoreAuto = Team2Scores.CenterVortexScoreAuto + 15;
             updateScore();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            redSideScore = redSideScore + 5;
-            secondTeamScore = secondTeamScore + 5;
+            Team2Scores.YogaBallAuto = Team2Scores.YogaBallAuto + 5;
             updateScore();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            redSideScore = redSideScore + 5;
-            secondTeamScore = secondTeamScore + 5;
+            Team2Scores.EndHeightAuto = Team2Scores.EndHeightAuto + 5;
             updateScore();
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 5;
-            blueSideScore = blueSideScore + 5;
+            Team1Scores.EndHeightAuto = Team1Scores.EndHeightAuto + 5;
             updateScore();
         }
 
@@ -119,282 +113,243 @@ namespace FTC_Scouting_App
 
         private void t2_beacon_auto_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 30;
-            blueSideScore = blueSideScore + 30;
+            Team1Scores.BeaconScoreAuto = Team1Scores.BeaconScoreAuto + 30;
             updateScore();
 
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
-            secondTeamScore = secondTeamScore + 10;
-            redSideScore = redSideScore + 10;
+            Team2Scores.EndHeightAuto = Team2Scores.EndHeightAuto + 10;
             updateScore();
         }
 
         private void t2_high_goal_auto_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 15;
-            blueSideScore = blueSideScore + 15;
+            Team1Scores.BeaconScoreAuto = Team1Scores.BeaconScoreAuto + 15;
             updateScore();
 
         }
 
         private void t2_yoga_auto_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 5;
-            blueSideScore = blueSideScore + 5;
+            Team1Scores.CornerVortexAuto = Team1Scores.CornerVortexAuto + 5;
             updateScore();
 
         }
 
         private void T2_Full_Park_auto_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 10;
-            blueSideScore = blueSideScore + 10;
+            Team1Scores.EndHeightAuto = Team1Scores.EndHeightAuto + 10;
             updateScore();
         }
 
         private void t2_highGoal_tele_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 5;
-            blueSideScore = blueSideScore + 5;
+            Team1Scores.CenterVortexScoreAuto = Team1Scores.CenterVortexScoreAuto + 5;
             updateScore();
 
         }
 
         private void t2_corner_Tele_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 1;
-            blueSideScore = blueSideScore + 1;
+            Team1Scores.CornerVortexScoreTele =Team1Scores.CornerVortexScoreTele + 1;
             updateScore();
         }
 
         private void t2_Yoga_Tele_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 40;
-            blueSideScore = blueSideScore + 40;
+            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 40;
             updateScore();
         }
 
         private void T2_beacons_tele_Click(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 10;
-            blueSideScore = blueSideScore + 10;
+            Team1Scores.BeaconScoreTele = Team1Scores.BeaconScoreTele + 10;
             updateScore();
         }
 
         private void t1_highGoal_tele_Click(object sender, EventArgs e)
         {
-            redSideScore = redSideScore + 5;
-            secondTeamScore = secondTeamScore + 5;
+            Team2Scores.CenterVortexScoreTele = Team2Scores.CenterVortexScoreTele + 5;
             updateScore();
 
         }
 
         private void t1_corner_Tele_Click(object sender, EventArgs e)
         {
-            redSideScore = redSideScore + 1;
-            secondTeamScore = secondTeamScore + 1;
+            Team2Scores.CornerVortexScoreTele = Team2Scores.CornerVortexScoreTele + 1;
             updateScore();
         }
 
         private void t1_Yoga_Tele_Click(object sender, EventArgs e)
         {
-            redSideScore = redSideScore + 40;
-            secondTeamScore = secondTeamScore + 40;
+            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 40;
             updateScore();
 
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            secondTeamScore = secondTeamScore + 20;
-            redSideScore = secondTeamScore + 20;
+            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 20;
             updateScore();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            secondTeamScore = secondTeamScore + 10;
-            redSideScore = secondTeamScore + 10;
+            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 10;
             updateScore();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 10;
-            blueSideScore = blueSideScore + 10;
+            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 10;
             updateScore();
         }
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            firstTeamScore = firstTeamScore + 20;
-            blueSideScore = blueSideScore + 20;
+            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 20;
             updateScore();
         }
 
 
         private void button26_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 30;
-            redSideScore = redSideScore + 30;
+            Team3Scores.BeaconScoreAuto = Team3Scores.BeaconScoreAuto + 30;
             updateScore();
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 15;
-            redSideScore = redSideScore + 15;
+            Team3Scores.CenterVortexScoreAuto = Team3Scores.CenterVortexScoreAuto + 15;
             updateScore();
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 5;
-            redSideScore = redSideScore + 5;
+            Team3Scores.YogaBallAuto = Team3Scores.YogaBallAuto + 5;
             updateScore();
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 5;
-            redSideScore = redSideScore + 5;
+            Team3Scores.EndHeightAuto = Team3Scores.EndHeightAuto + 5;
             updateScore();
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 10;
-            redSideScore = redSideScore + 10;
+            Team3Scores.EndHeightAuto = Team3Scores.EndHeightAuto + 10;
             updateScore();
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 5;
-            redSideScore = redSideScore + 5;
+            Team3Scores.CenterVortexScoreTele = Team3Scores.CenterVortexScoreTele + 5;
             updateScore();
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 1;
-            redSideScore = redSideScore + 1;
+            Team3Scores.CornerVortexScoreTele = Team3Scores.CornerVortexScoreTele + 1;
             updateScore();
         }
 
         private void button19_Click_1(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 10;
-            redSideScore = redSideScore + 10;
+            Team3Scores.BeaconScoreTele = Team3Scores.BeaconScoreTele + 10;
             updateScore();
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 40;
-            redSideScore = redSideScore + 40;
+            Team3Scores.YogaBallTele = Team3Scores.YogaBallTele + 40;
             updateScore();
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 20;
-            redSideScore = redSideScore + 20;
+            Team3Scores.YogaBallTele = Team3Scores.YogaBallTele + 20;
             updateScore();
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            thirdTeamScore = thirdTeamScore + 10;
-            redSideScore = redSideScore + 10;
+            Team3Scores.YogaBallTele = Team3Scores.YogaBallTele + 10;
             updateScore();
         }
 
         private void T1_beacons_tele_Click(object sender, EventArgs e)
         {
-            secondTeamScore = secondTeamScore + 10;
-            redSideScore = redSideScore + 10;
+            Team2Scores.BeaconScoreTele = Team2Scores.BeaconScoreTele + 10;
             updateScore();
 
         }
 
         private void button37_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 30;
-            blueSideScore = blueSideScore + 30;
+            Team4Scores.BeaconScoreAuto = Team4Scores.BeaconScoreAuto + 30;
             updateScore();
         }
 
         private void button36_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 15;
-            blueSideScore = blueSideScore + 15;
+            Team4Scores.CenterVortexScoreAuto = Team4Scores.CenterVortexScoreAuto + 15;
             updateScore();
         }
 
         private void button35_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 5;
-            blueSideScore = blueSideScore + 5;
+            Team4Scores.YogaBallAuto = Team4Scores.YogaBallAuto + 5;
             updateScore();
         }
 
         private void button34_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 5;
-            blueSideScore = blueSideScore + 5;
+            Team4Scores.EndHeightAuto = Team4Scores.EndHeightAuto + 5;
             updateScore();
         }
 
         private void button29_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 10;
-            blueSideScore = blueSideScore + 10;
+            Team4Scores.EndHeightAuto = Team4Scores.EndHeightAuto + 10;
             updateScore();
         }
 
         private void button33_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 5;
-            blueSideScore = blueSideScore + 5;
+            Team4Scores.CenterVortexScoreTele = Team4Scores.CenterVortexScoreTele + 5;
             updateScore();
         }
 
         private void button32_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 1;
-            blueSideScore = blueSideScore + 1;
+            Team4Scores.CornerVortexScoreTele = Team4Scores.CornerVortexScoreTele + 1;
             updateScore();
         }
 
         private void button30_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 10;
-            blueSideScore = blueSideScore + 10;
+            Team4Scores.BeaconScoreTele = Team4Scores.BeaconScoreTele + 10;
             updateScore();
         }
 
         private void button31_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 40;
-            blueSideScore = blueSideScore + 40;
+            Team4Scores.YogaBallTele = Team4Scores.YogaBallTele + 40;
             updateScore();
         }
 
         private void button28_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 20;
-            blueSideScore = blueSideScore + 20;
+            Team4Scores.YogaBallTele = Team4Scores.YogaBallTele + 20;
             updateScore();
         }
 
         private void button27_Click(object sender, EventArgs e)
         {
-            fourthTeamScore = fourthTeamScore + 10;
-            blueSideScore = blueSideScore + 10;
+            Team4Scores.YogaBallTele = Team4Scores.YogaBallTele + 10;
             updateScore();
         }
 
@@ -415,15 +370,21 @@ namespace FTC_Scouting_App
 
 
 
-            Team3Scores.BeaconScore = 80;
-            Team3Scores.CenterVortexScore = 7;
-
-            Team1Scores.BeaconScore = firstTeamScore;
-            Team1Scores.CenterVortexScore = firstTeamScore * 30;
+          
 
             FileStream writer = new FileStream(Path.Combine(SaveFileFolder, "Team1Score.xml"), FileMode.Create);
             serializer.Serialize(writer, Team1Scores);
             writer.Close();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

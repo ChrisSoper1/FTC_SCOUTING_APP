@@ -356,6 +356,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(258, 193);
             this.panel4.TabIndex = 3;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // button4
             // 
@@ -369,7 +370,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(180, 136);
+            this.button3.Location = new System.Drawing.Point(180, 135);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 24);
             this.button3.TabIndex = 14;
@@ -687,10 +688,11 @@
             this.panel9.BackColor = System.Drawing.Color.Blue;
             this.panel9.Controls.Add(this.textBox5);
             this.panel9.Controls.Add(this.label21);
-            this.panel9.Location = new System.Drawing.Point(584, 348);
+            this.panel9.Location = new System.Drawing.Point(584, 290);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(276, 100);
             this.panel9.TabIndex = 4;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // textBox5
             // 
@@ -728,7 +730,7 @@
             this.panel10.Controls.Add(this.button35);
             this.panel10.Controls.Add(this.button36);
             this.panel10.Controls.Add(this.button37);
-            this.panel10.Location = new System.Drawing.Point(587, 446);
+            this.panel10.Location = new System.Drawing.Point(587, 388);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(263, 208);
             this.panel10.TabIndex = 5;
@@ -933,7 +935,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 857);
+            this.ClientSize = new System.Drawing.Size(1181, 741);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel5);
