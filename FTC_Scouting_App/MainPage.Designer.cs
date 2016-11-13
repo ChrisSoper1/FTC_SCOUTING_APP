@@ -107,9 +107,11 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Team1Name = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button10 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -934,7 +936,7 @@
             // SaveButton
             // 
             this.SaveButton.AutoSize = true;
-            this.SaveButton.Location = new System.Drawing.Point(503, 726);
+            this.SaveButton.Location = new System.Drawing.Point(448, 728);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 8;
@@ -971,8 +973,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.Team1Name);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -980,17 +982,14 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label1
+            // Team1Name
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(22, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Team 1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.Team1Name.FormattingEnabled = true;
+            this.Team1Name.Location = new System.Drawing.Point(22, 35);
+            this.Team1Name.Name = "Team1Name";
+            this.Team1Name.Size = new System.Drawing.Size(121, 21);
+            this.Team1Name.TabIndex = 2;
+            this.Team1Name.Text = "Team1 Name";
             // 
             // textBox1
             // 
@@ -1008,11 +1007,32 @@
             this.panel12.Size = new System.Drawing.Size(263, 306);
             this.panel12.TabIndex = 11;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(353, 295);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(188, 21);
+            this.comboBox1.TabIndex = 14;
+            this.comboBox1.Text = "Competition";
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(358, 225);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(198, 27);
+            this.button10.TabIndex = 15;
+            this.button10.Text = "configure";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 857);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -1134,8 +1154,10 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.ComboBox Team1Name;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button10;
     }
 }
 

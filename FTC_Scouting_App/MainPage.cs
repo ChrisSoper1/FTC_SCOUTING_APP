@@ -18,6 +18,10 @@ namespace FTC_Scouting_App
         TeamScore Team2Scores = new TeamScore();
         TeamScore Team3Scores = new TeamScore();
         TeamScore Team4Scores = new TeamScore();
+        
+        Form2 settings = new Form2();
+
+        
 
 
         int firstTeamScore = 0;
@@ -40,7 +44,7 @@ namespace FTC_Scouting_App
             textBox4.Text = thirdTeamScore.ToString();
             textBox5.Text = fourthTeamScore.ToString();
             textBox6.Text = blueSideScore.ToString();
-            panel7.Size = new Size(263, 100);
+           
 
 
         }
@@ -382,15 +386,6 @@ namespace FTC_Scouting_App
             writer.Close();
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -419,6 +414,20 @@ namespace FTC_Scouting_App
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            settings.Show();
         }
     }
 }
