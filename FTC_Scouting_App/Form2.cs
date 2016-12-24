@@ -12,9 +12,10 @@ namespace FTC_Scouting_App
 {
     public partial class Form2 : Form
     {
+        List<Competition> compList= new List<Competition>();
+        
+        
 
-        TeamList teamList = new TeamList();
-        String blank = "empty";
         public Form2()
         {
             InitializeComponent();
@@ -28,31 +29,8 @@ namespace FTC_Scouting_App
         private void button1_Click(object sender, EventArgs e)
         {
             String check = textBox1.Text;
-            for (int i = 1; i < 30; i++)
-            {
-
-                if (check == teamList.number[i])
-                {
-                    break;
-                }
-            }
-            for (int k = 0; k < 30; k++)
-            {
-
-                if (teamList.number[k].Equals(teamList.number[28]))
-                {
-
-
-                }
-                else
-                {
-                    teamList.number[k] = check;
-                    teamList.name[k] = textBox2.Text;
-                    break;
-                }
-            }
-            label3.Text = teamList.name[1];
-            label4.Text = (teamList.number).ToString();
+            
+            
 
         }
 
@@ -64,10 +42,15 @@ namespace FTC_Scouting_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 0; i++) {
-                teamList.name[i] = "empty";
-                teamList.number[i] = "empty";
-            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            
+
+                 
         }
     }
 }

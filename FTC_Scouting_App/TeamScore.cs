@@ -9,7 +9,7 @@ namespace FTC_Scouting_App
     public class TeamScore
     {
         public String TeamName { get; set; }
-
+        
         public DateTime MatchTime { get; set; }
 
 
@@ -32,6 +32,7 @@ namespace FTC_Scouting_App
         public int TotalScore
         {
             get {
+               
                 return BeaconScoreTele + CenterVortexScoreTele + CornerVortexScoreTele + YogaBallTele+ BeaconScoreAuto+ CornerVortexAuto+CenterVortexScoreAuto+ YogaBallAuto+ EndHeightAuto;
             }
         }

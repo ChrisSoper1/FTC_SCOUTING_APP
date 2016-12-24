@@ -160,6 +160,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel3.Controls.Add(this.button9);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
@@ -321,6 +322,7 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel4.Controls.Add(this.button8);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.button3);
@@ -946,6 +948,7 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.panel10);
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Location = new System.Drawing.Point(588, 422);
@@ -955,6 +958,7 @@
             // 
             // panel11
             // 
+            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel11.Controls.Add(this.panel2);
             this.panel11.Location = new System.Drawing.Point(588, 10);
             this.panel11.Name = "panel11";
@@ -963,6 +967,7 @@
             // 
             // panel13
             // 
+            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel13.Controls.Add(this.panel7);
             this.panel13.Controls.Add(this.panel8);
             this.panel13.Location = new System.Drawing.Point(43, 422);
@@ -1001,6 +1006,7 @@
             // 
             // panel12
             // 
+            this.panel12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel12.Controls.Add(this.panel1);
             this.panel12.Location = new System.Drawing.Point(43, 12);
             this.panel12.Name = "panel12";
@@ -1009,6 +1015,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(353, 295);
             this.comboBox1.Name = "comboBox1";
@@ -1018,6 +1025,7 @@
             // 
             // button10
             // 
+            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button10.Location = new System.Drawing.Point(358, 225);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(198, 27);
@@ -1030,7 +1038,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 857);
+            this.ClientSize = new System.Drawing.Size(1181, 733);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel13);
@@ -1043,7 +1051,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel5);
             this.Name = "MainPage";
-            this.Text = "Form1";
+            this.Text = "Score Page";
             this.Load += new System.EventHandler(this.MainPage_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
