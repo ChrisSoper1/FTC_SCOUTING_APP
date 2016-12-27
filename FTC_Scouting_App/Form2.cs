@@ -28,7 +28,7 @@ namespace FTC_Scouting_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String check = textBox1.Text;
+            String check = TeamNumberInput.Text;
             
             
 

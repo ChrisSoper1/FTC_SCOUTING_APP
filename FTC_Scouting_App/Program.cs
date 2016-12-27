@@ -8,6 +8,8 @@ namespace FTC_Scouting_App
 {
     static class Program
     {
+        public static List<Competition> compList = new List<Competition>();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,6 +19,8 @@ namespace FTC_Scouting_App
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainPage());
+
+            
         }
     }
 }
