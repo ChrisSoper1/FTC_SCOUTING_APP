@@ -19,7 +19,10 @@ namespace FTC_Scouting_App
         public String location { get; set;}
         public String date { get; set; }
         public List <Team> team { get; set; }
-        
+        public override string ToString()
+        {
+            return displayName;
+        }
     }
 
     
