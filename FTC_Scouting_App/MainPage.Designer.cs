@@ -29,7 +29,6 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -62,7 +61,6 @@
             this.t2_beacon_auto = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -80,7 +78,6 @@
             this.button26 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
@@ -107,11 +104,14 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Team1Name = new System.Windows.Forms.ComboBox();
+            this.team2Box = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.localComp = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
+            this.team1Box = new System.Windows.Forms.ComboBox();
+            this.team3Box = new System.Windows.Forms.ComboBox();
+            this.team4Box = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -130,8 +130,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Blue;
+            this.panel2.Controls.Add(this.team1Box);
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -146,17 +146,6 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(68, 20);
             this.textBox2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(22, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 31);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Team 2";
             // 
             // panel3
             // 
@@ -484,8 +473,8 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Red;
+            this.panel7.Controls.Add(this.team3Box);
             this.panel7.Controls.Add(this.textBox4);
-            this.panel7.Controls.Add(this.label16);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
@@ -499,17 +488,6 @@
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(63, 20);
             this.textBox4.TabIndex = 1;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label16.Location = new System.Drawing.Point(22, 35);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(105, 31);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Team 3";
             // 
             // panel8
             // 
@@ -675,8 +653,8 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Blue;
+            this.panel9.Controls.Add(this.team4Box);
             this.panel9.Controls.Add(this.textBox5);
-            this.panel9.Controls.Add(this.label21);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
@@ -690,17 +668,6 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(63, 20);
             this.textBox5.TabIndex = 1;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label21.Location = new System.Drawing.Point(13, 27);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(105, 31);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Team 4";
             // 
             // panel10
             // 
@@ -978,7 +945,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Controls.Add(this.Team1Name);
+            this.panel1.Controls.Add(this.team2Box);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -987,14 +954,14 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // Team1Name
+            // team2Box
             // 
-            this.Team1Name.FormattingEnabled = true;
-            this.Team1Name.Location = new System.Drawing.Point(22, 35);
-            this.Team1Name.Name = "Team1Name";
-            this.Team1Name.Size = new System.Drawing.Size(121, 21);
-            this.Team1Name.TabIndex = 2;
-            this.Team1Name.Text = "Team1 Name";
+            this.team2Box.FormattingEnabled = true;
+            this.team2Box.Location = new System.Drawing.Point(22, 35);
+            this.team2Box.Name = "team2Box";
+            this.team2Box.Size = new System.Drawing.Size(121, 21);
+            this.team2Box.TabIndex = 2;
+            this.team2Box.Text = "Team1 Name";
             // 
             // textBox1
             // 
@@ -1013,15 +980,16 @@
             this.panel12.Size = new System.Drawing.Size(263, 306);
             this.panel12.TabIndex = 11;
             // 
-            // comboBox1
+            // localComp
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(353, 295);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(188, 21);
-            this.comboBox1.TabIndex = 14;
-            this.comboBox1.Text = "Competition";
+            this.localComp.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.localComp.FormattingEnabled = true;
+            this.localComp.Location = new System.Drawing.Point(353, 295);
+            this.localComp.Name = "localComp";
+            this.localComp.Size = new System.Drawing.Size(188, 21);
+            this.localComp.TabIndex = 14;
+            this.localComp.Text = "Competition";
+            this.localComp.SelectionChangeCommitted += new System.EventHandler(this.selectChange);
             // 
             // button10
             // 
@@ -1034,13 +1002,40 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // team1Box
+            // 
+            this.team1Box.FormattingEnabled = true;
+            this.team1Box.Location = new System.Drawing.Point(32, 33);
+            this.team1Box.Name = "team1Box";
+            this.team1Box.Size = new System.Drawing.Size(119, 21);
+            this.team1Box.TabIndex = 3;
+            this.team1Box.Text = "Team 2 Name";
+            // 
+            // team3Box
+            // 
+            this.team3Box.FormattingEnabled = true;
+            this.team3Box.Location = new System.Drawing.Point(33, 35);
+            this.team3Box.Name = "team3Box";
+            this.team3Box.Size = new System.Drawing.Size(109, 21);
+            this.team3Box.TabIndex = 2;
+            this.team3Box.Text = "Team 3 Name";
+            // 
+            // team4Box
+            // 
+            this.team4Box.FormattingEnabled = true;
+            this.team4Box.Location = new System.Drawing.Point(46, 39);
+            this.team4Box.Name = "team4Box";
+            this.team4Box.Size = new System.Drawing.Size(105, 21);
+            this.team4Box.TabIndex = 2;
+            this.team4Box.Text = "Team 4 Name";
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 733);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.localComp);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -1082,7 +1077,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
@@ -1114,7 +1108,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
@@ -1131,7 +1124,6 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
@@ -1163,9 +1155,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.ComboBox Team1Name;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox team2Box;
+        private System.Windows.Forms.ComboBox localComp;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.ComboBox team1Box;
+        private System.Windows.Forms.ComboBox team3Box;
+        private System.Windows.Forms.ComboBox team4Box;
     }
 }
 

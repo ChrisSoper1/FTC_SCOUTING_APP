@@ -24,6 +24,8 @@ namespace FTC_Scouting_App
             newComp.date = DateTime.Now.ToLongDateString();
             newComp.location = nameBox.Text;
             Program.compList.Add(newComp);
+            this.Close();
+            
             
         }
     }

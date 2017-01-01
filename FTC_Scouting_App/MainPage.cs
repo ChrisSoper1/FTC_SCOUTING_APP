@@ -44,7 +44,7 @@ namespace FTC_Scouting_App
             textBox4.Text = thirdTeamScore.ToString();
             textBox5.Text = fourthTeamScore.ToString();
             textBox6.Text = blueSideScore.ToString();
-           
+            localComp.DataSource = Program.compList;
 
 
         }
@@ -428,6 +428,31 @@ namespace FTC_Scouting_App
         private void button10_Click(object sender, EventArgs e)
         {
             settings.Show();
+            settings.FormClosed += Settings_FormClosed;
+        }
+
+        private void Settings_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            localComp.DataSource = null;
+            localComp.DataSource = Program.compList;
+
+            team1Box.DataSource = null;
+            team2Box.DataSource = null;
+            team3Box.DataSource = null;
+            team4Box.DataSource = null;
+
+            
+
+
+        }
+
+        private void selectChange(object sender, EventArgs e)
+        {
+            Competition selectedComp = (Competition)localComp.SelectedItem;
+            team1Box.DataSource = selectedComp.team;
+            team2Box.DataSource = selectedComp.team;
+            team3Box.DataSource = selectedComp.team;
+            team4Box.DataSource = selectedComp.team;
         }
     }
 }

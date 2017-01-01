@@ -82,13 +82,14 @@
             // 
             // compBox
             // 
-            this.compBox.DisplayMember = "Program.compList";
+            this.compBox.DisplayMember = "Program.compList.displayName";
             this.compBox.FormattingEnabled = true;
             this.compBox.Location = new System.Drawing.Point(469, 48);
             this.compBox.Name = "compBox";
             this.compBox.Size = new System.Drawing.Size(121, 21);
             this.compBox.TabIndex = 5;
             this.compBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.compBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.updateBOc);
             // 
             // button2
             // 
