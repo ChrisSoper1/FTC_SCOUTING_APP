@@ -87,31 +87,31 @@ namespace FTC_Scouting_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Team2Scores.BeaconScoreAuto = Team2Scores.BeaconScoreAuto + 30;
+            Team1Scores.BeaconScoreAuto = Team1Scores.BeaconScoreAuto + 30;
             updateScore();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Team2Scores.CenterVortexScoreAuto = Team2Scores.CenterVortexScoreAuto + 15;
+            Team1Scores.CenterVortexScoreAuto = Team1Scores.CenterVortexScoreAuto + 15;
             updateScore();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Team2Scores.YogaBallAuto = Team2Scores.YogaBallAuto + 5;
+            Team1Scores.YogaBallAuto = Team1Scores.YogaBallAuto + 5;
             updateScore();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Team2Scores.EndHeightAuto = Team2Scores.EndHeightAuto + 5;
+            Team1Scores.EndHeightAuto = Team1Scores.EndHeightAuto + 5;
             updateScore();
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            Team1Scores.EndHeightAuto = Team1Scores.EndHeightAuto + 5;
+            Team2Scores.EndHeightAuto = Team2Scores.EndHeightAuto + 5;
             updateScore();
         }
 
@@ -122,103 +122,103 @@ namespace FTC_Scouting_App
 
         private void t2_beacon_auto_Click(object sender, EventArgs e)
         {
-            Team1Scores.BeaconScoreAuto = Team1Scores.BeaconScoreAuto + 30;
+            Team2Scores.BeaconScoreAuto = Team2Scores.BeaconScoreAuto + 30;
             updateScore();
 
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
-            Team2Scores.EndHeightAuto = Team2Scores.EndHeightAuto + 10;
+            Team1Scores.EndHeightAuto = Team1Scores.EndHeightAuto + 10;
             updateScore();
         }
 
         private void t2_high_goal_auto_Click(object sender, EventArgs e)
         {
-            Team1Scores.BeaconScoreAuto = Team1Scores.BeaconScoreAuto + 15;
+            Team2Scores.BeaconScoreAuto = Team2Scores.BeaconScoreAuto + 15;
             updateScore();
 
         }
 
         private void t2_yoga_auto_Click(object sender, EventArgs e)
         {
-            Team1Scores.CornerVortexAuto = Team1Scores.CornerVortexAuto + 5;
+            Team2Scores.CornerVortexAuto = Team2Scores.CornerVortexAuto + 5;
             updateScore();
 
         }
 
         private void T2_Full_Park_auto_Click(object sender, EventArgs e)
         {
-            Team1Scores.EndHeightAuto = Team1Scores.EndHeightAuto + 10;
+            Team2Scores.EndHeightAuto = Team2Scores.EndHeightAuto + 10;
             updateScore();
         }
 
         private void t2_highGoal_tele_Click(object sender, EventArgs e)
         {
-            Team1Scores.CenterVortexScoreAuto = Team1Scores.CenterVortexScoreAuto + 5;
+            Team2Scores.CenterVortexScoreAuto = Team2Scores.CenterVortexScoreAuto + 5;
             updateScore();
 
         }
 
         private void t2_corner_Tele_Click(object sender, EventArgs e)
         {
-            Team1Scores.CornerVortexScoreTele =Team1Scores.CornerVortexScoreTele + 1;
+            Team2Scores.CornerVortexScoreTele =Team2Scores.CornerVortexScoreTele + 1;
             updateScore();
         }
 
         private void t2_Yoga_Tele_Click(object sender, EventArgs e)
         {
-            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 40;
+            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 40;
             updateScore();
         }
 
         private void T2_beacons_tele_Click(object sender, EventArgs e)
         {
-            Team1Scores.BeaconScoreTele = Team1Scores.BeaconScoreTele + 10;
+            Team2Scores.BeaconScoreTele = Team2Scores.BeaconScoreTele + 10;
             updateScore();
         }
 
         private void t1_highGoal_tele_Click(object sender, EventArgs e)
         {
-            Team2Scores.CenterVortexScoreTele = Team2Scores.CenterVortexScoreTele + 5;
+            Team1Scores.CenterVortexScoreTele = Team1Scores.CenterVortexScoreTele + 5;
             updateScore();
 
         }
 
         private void t1_corner_Tele_Click(object sender, EventArgs e)
         {
-            Team2Scores.CornerVortexScoreTele = Team2Scores.CornerVortexScoreTele + 1;
+            Team1Scores.CornerVortexScoreTele = Team1Scores.CornerVortexScoreTele + 1;
             updateScore();
         }
 
         private void t1_Yoga_Tele_Click(object sender, EventArgs e)
         {
-            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 40;
+            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 40;
             updateScore();
 
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 20;
+            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 20;
             updateScore();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 10;
+            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 10;
             updateScore();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 10;
+            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 10;
             updateScore();
         }
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Team1Scores.YogaBallTele = Team1Scores.YogaBallTele + 20;
+            Team2Scores.YogaBallTele = Team2Scores.YogaBallTele + 20;
             updateScore();
         }
 
@@ -369,13 +369,17 @@ namespace FTC_Scouting_App
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+
+
+
+
             String MyDocumentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             String SaveFileFolder = Path.Combine(MyDocumentsFolder, "FTC_Scorecard");
             if (!Directory.Exists(SaveFileFolder)) {
                 Directory.CreateDirectory(SaveFileFolder);
             }
 
-            XmlSerializer serializer = new XmlSerializer(typeof(TeamScore));
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Competition>));
 
 
 
