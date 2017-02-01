@@ -22,8 +22,10 @@ namespace FTC_Scouting_App
 
         }
         public String location { get; set; }
+
         public String date { get; set; }
         public List<Team> team { get; set; }
+
         public override string ToString()
         {
             return displayName;
@@ -33,6 +35,11 @@ namespace FTC_Scouting_App
 
     public class Team
     {
+
+        public Team()
+        {
+             scores = new List<TeamScore>();
+        }
         public String teamName { get; set; }
         public String teamNumber { get; set; }
         public List<TeamScore> scores { get; set; }

@@ -28,7 +28,8 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.team2Box = new System.Windows.Forms.ComboBox();
+            this.team2score = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,6 +61,7 @@
             this.t2_high_goal_auto = new System.Windows.Forms.Button();
             this.t2_beacon_auto = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.team3Box = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
@@ -77,6 +79,7 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.team4Box = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
@@ -104,14 +107,11 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.team2Box = new System.Windows.Forms.ComboBox();
+            this.team1Box = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.localComp = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
-            this.team1Box = new System.Windows.Forms.ComboBox();
-            this.team3Box = new System.Windows.Forms.ComboBox();
-            this.team4Box = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -130,8 +130,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Blue;
-            this.panel2.Controls.Add(this.team1Box);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.team2Box);
+            this.panel2.Controls.Add(this.team2score);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -139,13 +139,22 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // textBox2
+            // team2Box
             // 
-            this.textBox2.Location = new System.Drawing.Point(186, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(68, 20);
-            this.textBox2.TabIndex = 2;
+            this.team2Box.FormattingEnabled = true;
+            this.team2Box.Location = new System.Drawing.Point(32, 33);
+            this.team2Box.Name = "team2Box";
+            this.team2Box.Size = new System.Drawing.Size(119, 21);
+            this.team2Box.TabIndex = 3;
+            this.team2Box.Text = "Team 2 Name";
+            // 
+            // team2score
+            // 
+            this.team2score.Location = new System.Drawing.Point(186, 38);
+            this.team2score.Name = "team2score";
+            this.team2score.ReadOnly = true;
+            this.team2score.Size = new System.Drawing.Size(68, 20);
+            this.team2score.TabIndex = 2;
             // 
             // panel3
             // 
@@ -164,7 +173,7 @@
             this.panel3.Controls.Add(this.t1_yoga_auto);
             this.panel3.Controls.Add(this.t1_high_goal_auto);
             this.panel3.Controls.Add(this.t1_beacon_auto);
-            this.panel3.Location = new System.Drawing.Point(43, 110);
+            this.panel3.Location = new System.Drawing.Point(43, 151);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(263, 208);
             this.panel3.TabIndex = 2;
@@ -326,7 +335,7 @@
             this.panel4.Controls.Add(this.t2_yoga_auto);
             this.panel4.Controls.Add(this.t2_high_goal_auto);
             this.panel4.Controls.Add(this.t2_beacon_auto);
-            this.panel4.Location = new System.Drawing.Point(588, 108);
+            this.panel4.Location = new System.Drawing.Point(588, 149);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(263, 208);
             this.panel4.TabIndex = 3;
@@ -480,6 +489,15 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(263, 100);
             this.panel7.TabIndex = 4;
+            // 
+            // team3Box
+            // 
+            this.team3Box.FormattingEnabled = true;
+            this.team3Box.Location = new System.Drawing.Point(33, 35);
+            this.team3Box.Name = "team3Box";
+            this.team3Box.Size = new System.Drawing.Size(109, 21);
+            this.team3Box.TabIndex = 2;
+            this.team3Box.Text = "Team 3 Name";
             // 
             // textBox4
             // 
@@ -660,6 +678,16 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(263, 100);
             this.panel9.TabIndex = 4;
+            // 
+            // team4Box
+            // 
+            this.team4Box.FormattingEnabled = true;
+            this.team4Box.Location = new System.Drawing.Point(46, 39);
+            this.team4Box.Name = "team4Box";
+            this.team4Box.Size = new System.Drawing.Size(105, 21);
+            this.team4Box.TabIndex = 2;
+            this.team4Box.Text = "Team 4 Name";
+            this.team4Box.DisplayMemberChanged += new System.EventHandler(this.team4Box_DisplayMemberChanged);
             // 
             // textBox5
             // 
@@ -904,8 +932,10 @@
             // 
             // SaveButton
             // 
+            this.SaveButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SaveButton.AutoSize = true;
-            this.SaveButton.Location = new System.Drawing.Point(448, 728);
+            this.SaveButton.Location = new System.Drawing.Point(414, 336);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 8;
@@ -918,7 +948,7 @@
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.panel10);
             this.panel6.Controls.Add(this.panel9);
-            this.panel6.Location = new System.Drawing.Point(588, 422);
+            this.panel6.Location = new System.Drawing.Point(588, 503);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(263, 308);
             this.panel6.TabIndex = 9;
@@ -927,7 +957,7 @@
             // 
             this.panel11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel11.Controls.Add(this.panel2);
-            this.panel11.Location = new System.Drawing.Point(588, 10);
+            this.panel11.Location = new System.Drawing.Point(588, 51);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(263, 100);
             this.panel11.TabIndex = 10;
@@ -937,7 +967,7 @@
             this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel13.Controls.Add(this.panel7);
             this.panel13.Controls.Add(this.panel8);
-            this.panel13.Location = new System.Drawing.Point(43, 422);
+            this.panel13.Location = new System.Drawing.Point(43, 503);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(263, 302);
             this.panel13.TabIndex = 12;
@@ -945,7 +975,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Controls.Add(this.team2Box);
+            this.panel1.Controls.Add(this.team1Box);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -954,14 +984,14 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // team2Box
+            // team1Box
             // 
-            this.team2Box.FormattingEnabled = true;
-            this.team2Box.Location = new System.Drawing.Point(22, 35);
-            this.team2Box.Name = "team2Box";
-            this.team2Box.Size = new System.Drawing.Size(121, 21);
-            this.team2Box.TabIndex = 2;
-            this.team2Box.Text = "Team1 Name";
+            this.team1Box.FormattingEnabled = true;
+            this.team1Box.Location = new System.Drawing.Point(22, 35);
+            this.team1Box.Name = "team1Box";
+            this.team1Box.Size = new System.Drawing.Size(121, 21);
+            this.team1Box.TabIndex = 2;
+            this.team1Box.Text = "Team1 Name";
             // 
             // textBox1
             // 
@@ -975,7 +1005,7 @@
             // 
             this.panel12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel12.Controls.Add(this.panel1);
-            this.panel12.Location = new System.Drawing.Point(43, 12);
+            this.panel12.Location = new System.Drawing.Point(43, 53);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(263, 306);
             this.panel12.TabIndex = 11;
@@ -1002,38 +1032,11 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // team1Box
-            // 
-            this.team1Box.FormattingEnabled = true;
-            this.team1Box.Location = new System.Drawing.Point(32, 33);
-            this.team1Box.Name = "team1Box";
-            this.team1Box.Size = new System.Drawing.Size(119, 21);
-            this.team1Box.TabIndex = 3;
-            this.team1Box.Text = "Team 2 Name";
-            // 
-            // team3Box
-            // 
-            this.team3Box.FormattingEnabled = true;
-            this.team3Box.Location = new System.Drawing.Point(33, 35);
-            this.team3Box.Name = "team3Box";
-            this.team3Box.Size = new System.Drawing.Size(109, 21);
-            this.team3Box.TabIndex = 2;
-            this.team3Box.Text = "Team 3 Name";
-            // 
-            // team4Box
-            // 
-            this.team4Box.FormattingEnabled = true;
-            this.team4Box.Location = new System.Drawing.Point(46, 39);
-            this.team4Box.Name = "team4Box";
-            this.team4Box.Size = new System.Drawing.Size(105, 21);
-            this.team4Box.TabIndex = 2;
-            this.team4Box.Text = "Team 4 Name";
-            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 733);
+            this.ClientSize = new System.Drawing.Size(1181, 814);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.localComp);
             this.Controls.Add(this.panel13);
@@ -1077,7 +1080,7 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox team2score;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
@@ -1155,10 +1158,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.ComboBox team2Box;
+        private System.Windows.Forms.ComboBox team1Box;
         private System.Windows.Forms.ComboBox localComp;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.ComboBox team1Box;
+        private System.Windows.Forms.ComboBox team2Box;
         private System.Windows.Forms.ComboBox team3Box;
         private System.Windows.Forms.ComboBox team4Box;
     }

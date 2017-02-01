@@ -85,9 +85,14 @@ namespace FTC_Scouting_App
             newTeam.teamNumber = textBox1.Text;
 
             Competition comp = (Competition)compBox.SelectedItem;
-
-            comp.team.Add(newTeam);
-
+            try
+            {
+                comp.team.Add(newTeam);
+            }
+            catch
+            {
+                
+            }
 
         }
 

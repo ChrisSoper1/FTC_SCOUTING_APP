@@ -38,7 +38,7 @@ namespace FTC_Scouting_App
             
 
             InitializeComponent();
-            textBox2.Text = firstTeamScore.ToString();
+            team2score.Text = firstTeamScore.ToString();
             textBox1.Text = secondTeamScore.ToString();
             textBox3.Text = redSideScore.ToString();
             textBox4.Text = thirdTeamScore.ToString();
@@ -53,8 +53,10 @@ namespace FTC_Scouting_App
         {
 
             textBox3.Text = (Team2Scores.TotalScore + Team3Scores.TotalScore).ToString();
-            textBox2.Text = Team1Scores.TotalScore.ToString();
-            textBox1.Text = Team2Scores.TotalScore.ToString(); 
+
+            textBox1.Text= Team1Scores.TotalScore.ToString();
+      
+            team2score.Text = Team2Scores.TotalScore.ToString(); 
             textBox4.Text = Team3Scores.TotalScore.ToString();
             textBox5.Text = Team4Scores.TotalScore.ToString();
             textBox6.Text = (Team1Scores.TotalScore + Team4Scores.TotalScore).ToString();
@@ -291,7 +293,7 @@ namespace FTC_Scouting_App
 
         private void T1_beacons_tele_Click(object sender, EventArgs e)
         {
-            Team2Scores.BeaconScoreTele = Team2Scores.BeaconScoreTele + 10;
+            Team1Scores.BeaconScoreTele = Team1Scores.BeaconScoreTele + 10;
             updateScore();
 
         }
@@ -362,7 +364,7 @@ namespace FTC_Scouting_App
             updateScore();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e) //What does it do???
         {
             updateScore();
         }
@@ -370,6 +372,17 @@ namespace FTC_Scouting_App
         private void SaveButton_Click(object sender, EventArgs e)
         {
 
+            Team team1 = (Team)team1Box.SelectedItem;
+            Team team2 = (Team)team2Box.SelectedItem;
+            Team team3 = (Team)team3Box.SelectedItem;
+            Team team4 = (Team)team4Box.SelectedItem;
+            Competition localCompSave = (Competition)localComp.SelectedItem;
+
+            // team1.scores.Add();
+            team1.scores.Add(Team1Scores);
+            team2.scores.Add(Team2Scores);
+            team3.scores.Add(Team3Scores);
+            team4.scores.Add(Team4Scores);
 
 
 
@@ -385,8 +398,8 @@ namespace FTC_Scouting_App
 
           
 
-            FileStream writer = new FileStream(Path.Combine(SaveFileFolder, "Team1Score.xml"), FileMode.Create);
-            serializer.Serialize(writer, Team1Scores);
+            FileStream writer = new FileStream(Path.Combine(SaveFileFolder, "save.xml"), FileMode.Create);
+            serializer.Serialize(writer, Program.compList);
             writer.Close();
         }
 
@@ -440,8 +453,8 @@ namespace FTC_Scouting_App
             localComp.DataSource = null;
             localComp.DataSource = Program.compList;
 
-            team1Box.DataSource = null;
             team2Box.DataSource = null;
+            team1Box.DataSource = null;
             team3Box.DataSource = null;
             team4Box.DataSource = null;
 
@@ -453,10 +466,15 @@ namespace FTC_Scouting_App
         private void selectChange(object sender, EventArgs e)
         {
             Competition selectedComp = (Competition)localComp.SelectedItem;
-            team1Box.DataSource = selectedComp.team;
             team2Box.DataSource = selectedComp.team;
+            team1Box.DataSource = selectedComp.team;
             team3Box.DataSource = selectedComp.team;
             team4Box.DataSource = selectedComp.team;
+        }
+
+        private void team4Box_DisplayMemberChanged(object sender, EventArgs e)
+        {
+         
         }
     }
 }
