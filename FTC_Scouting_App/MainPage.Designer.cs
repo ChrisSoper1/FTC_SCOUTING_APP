@@ -173,7 +173,7 @@
             this.panel3.Controls.Add(this.t1_yoga_auto);
             this.panel3.Controls.Add(this.t1_high_goal_auto);
             this.panel3.Controls.Add(this.t1_beacon_auto);
-            this.panel3.Location = new System.Drawing.Point(43, 151);
+            this.panel3.Location = new System.Drawing.Point(43, 114);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(263, 208);
             this.panel3.TabIndex = 2;
@@ -335,7 +335,7 @@
             this.panel4.Controls.Add(this.t2_yoga_auto);
             this.panel4.Controls.Add(this.t2_high_goal_auto);
             this.panel4.Controls.Add(this.t2_beacon_auto);
-            this.panel4.Location = new System.Drawing.Point(588, 149);
+            this.panel4.Location = new System.Drawing.Point(588, 112);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(263, 208);
             this.panel4.TabIndex = 3;
@@ -948,7 +948,7 @@
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.panel10);
             this.panel6.Controls.Add(this.panel9);
-            this.panel6.Location = new System.Drawing.Point(588, 503);
+            this.panel6.Location = new System.Drawing.Point(588, 430);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(263, 308);
             this.panel6.TabIndex = 9;
@@ -957,7 +957,7 @@
             // 
             this.panel11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel11.Controls.Add(this.panel2);
-            this.panel11.Location = new System.Drawing.Point(588, 51);
+            this.panel11.Location = new System.Drawing.Point(588, 14);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(263, 100);
             this.panel11.TabIndex = 10;
@@ -967,7 +967,7 @@
             this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel13.Controls.Add(this.panel7);
             this.panel13.Controls.Add(this.panel8);
-            this.panel13.Location = new System.Drawing.Point(43, 503);
+            this.panel13.Location = new System.Drawing.Point(43, 430);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(263, 302);
             this.panel13.TabIndex = 12;
@@ -992,6 +992,7 @@
             this.team1Box.Size = new System.Drawing.Size(121, 21);
             this.team1Box.TabIndex = 2;
             this.team1Box.Text = "Team1 Name";
+            this.team1Box.SelectionChangeCommitted += new System.EventHandler(this.team1Change);
             // 
             // textBox1
             // 
@@ -1005,7 +1006,7 @@
             // 
             this.panel12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel12.Controls.Add(this.panel1);
-            this.panel12.Location = new System.Drawing.Point(43, 53);
+            this.panel12.Location = new System.Drawing.Point(43, 16);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(263, 306);
             this.panel12.TabIndex = 11;
@@ -1036,7 +1037,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 814);
+            this.ClientSize = new System.Drawing.Size(1181, 741);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.localComp);
             this.Controls.Add(this.panel13);

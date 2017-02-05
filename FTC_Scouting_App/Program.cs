@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace FTC_Scouting_App
 {
@@ -17,15 +19,8 @@ namespace FTC_Scouting_App
         [STAThread]
         static void Main()
         {
-           
-            String MyDocumentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            String SaveFileFolder = Path.Combine(MyDocumentsFolder, "FTC_Scorecard");
-            string curFile = @"c:\temp\test.txt";
-            String fileSave = Path.Combine(SaveFileFolder, "saveFile");
-            if (Directory.Exists(fileSave))
-            {
-                
-            }
+
+            SaveLoad.load();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

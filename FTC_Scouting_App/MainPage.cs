@@ -379,13 +379,20 @@ namespace FTC_Scouting_App
             Competition localCompSave = (Competition)localComp.SelectedItem;
 
             // team1.scores.Add();
-            team1.scores.Add(Team1Scores);
-            team2.scores.Add(Team2Scores);
-            team3.scores.Add(Team3Scores);
-            team4.scores.Add(Team4Scores);
+            try
+            {
 
+                team1.scores.Add(Team1Scores);
+                team2.scores.Add(Team2Scores);
+                team3.scores.Add(Team3Scores);
+                team4.scores.Add(Team4Scores);
+            }
+            catch
+            {
 
+            }
 
+            /*
             String MyDocumentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             String SaveFileFolder = Path.Combine(MyDocumentsFolder, "FTC_Scorecard");
             if (!Directory.Exists(SaveFileFolder)) {
@@ -401,6 +408,9 @@ namespace FTC_Scouting_App
             FileStream writer = new FileStream(Path.Combine(SaveFileFolder, "save.xml"), FileMode.Create);
             serializer.Serialize(writer, Program.compList);
             writer.Close();
+            */
+
+            SaveLoad.save();
         }
 
 
@@ -466,8 +476,10 @@ namespace FTC_Scouting_App
         private void selectChange(object sender, EventArgs e)
         {
             Competition selectedComp = (Competition)localComp.SelectedItem;
-            team2Box.DataSource = selectedComp.team;
+            ComboBox updatedfild = (ComboBox)sender;
+            
             team1Box.DataSource = selectedComp.team;
+            team2Box.DataSource = selectedComp.team;
             team3Box.DataSource = selectedComp.team;
             team4Box.DataSource = selectedComp.team;
         }
@@ -475,6 +487,13 @@ namespace FTC_Scouting_App
         private void team4Box_DisplayMemberChanged(object sender, EventArgs e)
         {
          
+        }
+
+        private void team1Change(object sender, EventArgs e)
+        {
+
+           
+
         }
     }
 }
