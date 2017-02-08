@@ -19,8 +19,8 @@ namespace FTC_Scouting_App
         TeamScore Team3Scores = new TeamScore();
         TeamScore Team4Scores = new TeamScore();
         
-        Form2 settings = new Form2();
-
+       
+        Form4 view = new Form4();
         
 
 
@@ -454,6 +454,7 @@ namespace FTC_Scouting_App
 
         private void button10_Click(object sender, EventArgs e)
         {
+            Form2 settings = new Form2();
             settings.Show();
             settings.FormClosed += Settings_FormClosed;
         }
@@ -479,8 +480,11 @@ namespace FTC_Scouting_App
             ComboBox updatedfild = (ComboBox)sender;
             
             team1Box.DataSource = selectedComp.team;
+            team2Box.BindingContext = new BindingContext();
             team2Box.DataSource = selectedComp.team;
+            team3Box.BindingContext = new BindingContext();
             team3Box.DataSource = selectedComp.team;
+            team4Box.BindingContext = new BindingContext();
             team4Box.DataSource = selectedComp.team;
         }
 
@@ -494,6 +498,12 @@ namespace FTC_Scouting_App
 
            
 
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form4 view = new Form4();
+            view.Show();
         }
     }
 }

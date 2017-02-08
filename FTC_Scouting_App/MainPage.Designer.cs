@@ -112,6 +112,7 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.localComp = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -1033,11 +1034,22 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(414, 390);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 16;
+            this.button11.Text = "view";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 741);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.localComp);
             this.Controls.Add(this.panel13);
@@ -1165,6 +1177,7 @@
         private System.Windows.Forms.ComboBox team2Box;
         private System.Windows.Forms.ComboBox team3Box;
         private System.Windows.Forms.ComboBox team4Box;
+        private System.Windows.Forms.Button button11;
     }
 }
 
