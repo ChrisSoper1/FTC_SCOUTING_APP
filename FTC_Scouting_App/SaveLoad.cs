@@ -23,10 +23,16 @@ namespace FTC_Scouting_App
             XmlSerializer serializer = new XmlSerializer(typeof(List<Competition>));
             //TODO reuse variables better
 
-            FileStream reader = new FileStream(Path.Combine(SaveFileFolder, "save.xml"), FileMode.Open);
-            Program.compList =  (List<Competition>)serializer.Deserialize(reader);
-            reader.Close();
-
+            if (File.Exists(Path.Combine(SaveFileFolder, "save.xml")))
+            {
+                FileStream reader = new FileStream(Path.Combine(SaveFileFolder, "save.xml"), FileMode.Open);
+                Program.compList = (List<Competition>)serializer.Deserialize(reader);
+                reader.Close();
+            }
+            else
+            {
+                Program.compList = new List<Competition>();
+            }
         }
         public static void save()
         {

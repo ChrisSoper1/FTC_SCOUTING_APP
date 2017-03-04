@@ -36,5 +36,9 @@ namespace FTC_Scouting_App
                 return BeaconScoreTele + CenterVortexScoreTele + CornerVortexScoreTele + YogaBallTele+ BeaconScoreAuto+ CornerVortexAuto+CenterVortexScoreAuto+ YogaBallAuto+ EndHeightAuto;
             }
         }
+        public override string ToString()
+        {
+            return MatchTime.ToShortTimeString();
+        }
     }
 }
